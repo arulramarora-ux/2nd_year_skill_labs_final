@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Full Stack Project</title>
+  <link rel="stylesheet" href="style_1.css">
+</head>
+<body>
+
+  <header>
+    <div>
+      <h1>My Full Stack Project</h1>
+      <p>Study Planner</p>
+    </div>
+    <nav>
+      <a href="#timetable">Timetable</a>
+      <a href="#subjects">Subjects</a>
+      <a href="#goals">Goals</a>
+      <a href="#add-task">Add a task</a>
+    </nav>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-text">
+        <h2>Plan your five training days in one place</h2>
+        <p>Keep track of what each session covers and what you need to finish. This is Day 1: the page is built with HTML5 and CSS. Later days will add JavaScript, a server and a database.</p>
+      </div>
+      <img src="images/planner.svg" alt="Weekly planner grid with five day columns and coloured study blocks">
+    </section>
+
+    <section id="timetable">
+      <h2>Weekly timetable</h2>
+      <p>Session 1: 9:30 AM to 12:30 PM. Session 2: 1:30 PM to 4:30 PM. Every day is 3+3 hours.</p>
+      <table>
+        <tr>
+          <th>Day</th>
+          <th>Date</th>
+          <th>Morning session</th>
+          <th>Afternoon hands-on</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>22 Oct 2026</td>
+          <td>Web fundamentals, HTML, CSS, responsive design</td>
+          <td>Portfolio + Git basics</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>23 Oct 2026</td>
+          <td>JavaScript, DOM, JSON, APIs</td>
+          <td>Interactive Task Manager</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>24 Oct 2026</td>
+          <td>Node.js, Express, REST API</td>
+          <td>Student REST API + Postman</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>27 Oct 2026</td>
+          <td>MongoDB + database integration</td>
+          <td>Full-stack Student Management App</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>28 Oct 2026</td>
+          <td>GitHub, branching, Collaboration, Hackathon</td>
+          <td>Capstone development, Testing and Demo</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="subjects">
+      <h2>Subjects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>HTML and CSS</h3>
+          <p>Semantic elements, selectors, the box model, Flexbox and media queries.</p>
+          <p>Day 1</p>
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>JavaScript, the DOM, JSON and APIs.</p>
+          <p>Day 2</p>
+        </div>
+        <div class="card">
+          <h3>Node.js and Express</h3>
+          <p>Node.js, Express and REST API.</p>
+          <p>Day 3</p>
+        </div>
+        <div class="card">
+          <h3>MongoDB</h3>
+          <p>MongoDB and database integration.</p>
+          <p>Day 4</p>
+        </div>
+        <div class="card">
+          <h3>Git and GitHub</h3>
+          <p>Commits, branches and merging. GitHub, branching and collaboration.</p>
+          <p>Day 1 and Day 5</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="goals">
+      <h2>Goals for the week</h2>
+      <ul>
+        <li>Build a responsive webpage with an external stylesheet (Day 1)</li>
+        <li>Create an interactive task manager (Day 2)</li>
+        <li>Build a student REST API (Day 3)</li>
+        <li>Integrate MongoDB (Day 4)</li>
+        <li>Collaborate on GitHub and demo the capstone (Day 5)</li>
+      </ul>
+    </section>
+
+    <section id="add-task">
+      <h2>Add a task</h2>
+      <form>
+        <div class="field">
+          <label for="name">Your name</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="field">
+          <label for="task">Task</label>
+          <input type="text" id="task" required>
+        </div>
+        <div class="field">
+          <label for="subject">Subject</label>
+          <select id="subject">
+            <option>HTML and CSS</option>
+            <option>JavaScript</option>
+            <option>Node.js and Express</option>
+            <option>MongoDB</option>
+            <option>Git and GitHub</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="due">Due on</label>
+          <select id="due">
+            <option>Day 1 - 22 Oct 2026</option>
+            <option>Day 2 - 23 Oct 2026</option>
+            <option>Day 3 - 24 Oct 2026</option>
+            <option>Day 4 - 27 Oct 2026</option>
+            <option>Day 5 - 28 Oct 2026</option>
+          </select>
+        </div>
+        <div class="field">
+          <p>Priority</p>
+          <div>
+            <label><input type="radio" name="priority"> Low</label>
+            <label><input type="radio" name="priority" checked> Medium</label>
+            <label><input type="radio" name="priority"> High</label>
+          </div>
+        </div>
+        <button type="submit">Add task</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>My Full Stack Project - Department of Computer Science &amp; Engineering</p>
+  </footer>
+
+</body>
+</html>
